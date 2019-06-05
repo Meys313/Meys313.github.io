@@ -283,7 +283,86 @@ font-weight: 700;
 }
 .carousel-indicators li{
 	opacity: .1;
-	width: 1vw;
-	height:1vw;
+	width: 1.5vw;
+	height:1.5vw;
 	border-radius: 100%;
  }	
+ /*download*/
+ .download{
+ 	text-align: center;
+ 	margin: 7% 0 6% 0;
+
+ }
+ .download-content__title{
+ 	margin-bottom: 1%;
+ 	color:#3D4345;
+
+ }
+ .download-content{
+
+ }
+ .download-content__text{
+ 	margin-bottom: 2%;
+ 	font-weight: 700;
+ 	text-transform: uppercase;
+ 	color:#282C30;
+ }
+ .btn--download{
+ 	background-color:#FF4343;
+ 	padding:13px 90px 13px 90px;
+ 	
+ }
+ /*footer*/
+ footer{
+ 	background-color: #353C65;
+ 	color:#fff;
+ }
+ .footer-data{
+ 	padding:3% 0 3% 0;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	text-align: center;
+
+ }
+ .footer-location{
+ 	width: 30%;
+ }
+ .footer-snare{
+ 	width: 30%;
+ }
+ .footer-snare .fab{
+ 	font-size: 2vw;
+ 	margin: 2%;
+ }
+ .footer-about{
+ 	width: 30%;
+ }
+ .footer__title{
+ 	margin-bottom: 4%;
+ }
+ .footer__text{
+ 	color: #9EA0B4;
+ 	line-height: 1.2vw;
+ }
+.footer-author{
+background-color: #313454;
+ color:#7C7C7E;
+ text-align: center;
+ padding-top: 1%;
+ padding-bottom: 1%;
+ line-height: 1.2vw;
+}
+.footer-author li{
+	
+}
+.footer-author .fas{
+	color:#FF4343;
+	margin: 0;
+	padding:0;
+	font-size: .6vw;
+	margin-left: .5%;
+}
+.footer-author__name{
+	margin-left: .5%;
+	color:#fff;
+}
