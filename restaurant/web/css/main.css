@@ -1,0 +1,292 @@
+/*
+font-family: 'Sintony', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	color:#7D8287;
+	font-family: 'Sintony', sans-serif;
+	font-weight: normal;
+
+}
+.container{
+	margin: 0 auto;
+	width: 70%;
+	
+}
+.btn{
+	background-color:#fea100;
+	color:#fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-style: 14px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.title{
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	color:#000;
+}
+.header-main{
+	width: 100%;
+	/*height: 100vh;*/
+}
+.header-main-navigation{
+	/*height: 10%;*/
+	padding: 25px 0 25px 0;
+}
+.header-nav .nav-item .nav-link a{
+	color:#2C465A;
+	font-weight: 700;
+	font-style: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-right: 29px;
+}
+
+.header--btn{
+	padding: 18px 18px 18px 55px;
+	position: relative;
+}
+.header--btn img {
+	position: absolute;
+	top: 32%;
+	left: 10%;
+
+}
+.header-main-headline{
+	/*height:90%;*/
+	background:url(../img/first-bg.jpg) no-repeat center;
+	background-size:cover;
+	padding: 233px 0px 255px 0;
+}
+.header--title{
+	color:#fff;
+	font-size: 56px;
+}
+.header--subtitle{
+	color:#fff;
+	font-size: 40px;
+}
+.header--subtitle span{
+	color:#FEA100;
+}
+.header-main-navigation-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-main-navigation .header-logo{
+	
+
+}
+.header-main-navigation .header-navigation{
+	
+}
+.header-main-navigation .nav-item{
+	display: flex;
+}
+.header-main-navigation .nav-link{
+	display: inline-block;
+}
+/*---------header */
+.contact{
+	padding: 35px 0 35px 0;
+	border-bottom: 1px solid #DDE3E7;
+}
+.contact-wrapper{
+ display: flex;
+ justify-content: center;
+}
+.contact__telephone_call{
+	width:200px;
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 50% 50%;
+	grid-template-areas: 'img a1' 'img a2';
+}
+.contact__telephone_call img{
+	grid-area:img;
+}
+.contact__telephone_call a{
+	grid-area:a1;
+	color:#14141D;
+	font-weight: 700;
+	font-size: 15px;
+	text-decoration: none;
+}
+.contact__telephone_call a:last-child{
+	grid-area:a2;
+	color:#FEA202;
+	font-size: 18px;
+}
+.contact__telephone_number{
+	
+}
+.contact__telephone_number h3 {
+	color:#14141D;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 32px;
+}
+/*contact*/
+
+.s-about{
+	padding-top: 116px;
+	position: relative;
+}
+.s-about-wrapper{
+	display: flex;
+}
+.about-text__title{
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+.about-text__text{
+	font-size: 13px;
+	line-height: 1.3vw;
+	width: 90%;
+	margin-bottom: 50px;
+	color:#5C6369;
+}
+.about--btn{
+	padding:15px 20px 15px 20px;
+}
+.about-gallery{
+	display: flex;
+	height: 361px;
+	
+}
+.about-gallery-group1{
+	align-self: flex-end;
+	margin-right: 30px;
+}
+.about-gallery-group2{
+	align-self: flex-start;
+}
+/*Special*/
+.s-special{
+	position: relative
+}
+.special-title{
+	font-size: 35px;
+	color:#fff;
+}
+.special-bg{
+	padding-top: 90px;
+	height: 442px;
+	background:url(../img/third-bg.jpg) no-repeat center;
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 577px;
+}
+.special-card{
+	display: flex;
+	
+	position: absolute;
+	top: 40%;
+	left:19vw;
+	margin-bottom: 125px;
+	
+}
+
+.food-card{
+	width: 40%;
+	height: auto;
+
+}
+.food-card-img{
+	width: 100%;
+	height: auto;
+}
+.food-one{
+	margin-right: 30px;
+}
+/*card-price*/
+.special-card-description{
+	text-align: center;
+}
+.special-card--title{
+	font-size: 26px;
+	margin:50px 0 25px 0;
+}
+.special-card__text{
+	margin: 0 0 50px 0;
+	line-height: 1.5vw;
+}
+.special-card-price{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:0 3% 0 3%;
+	border-top:1px solid #E1E1E1;
+
+}
+.card-price__home{
+	font-weight: 700;
+	font-size: 13px;
+	text-decoration: none;
+	color:#14141D;
+	text-transform: uppercase;
+
+}
+.card-price__delivery{
+	font-weight: 700;
+	font-size: 13px;
+	color:#FE4C8D;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+.card-price__phone{
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 26px;
+	color:#14141D;
+}
+.card-price__money{
+	color:#FEA100;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 30px;
+}
+.card-price__link{
+	display: grid;
+	grid-template-rows: 50% 50%;
+	border-right:1px solid #E1E1E1;
+	padding: 3%;
+}
+/*footer*/
+.main-footer{
+	background-color: #373844;
+	text-align: center;
+	padding:80px 0 80px 0;
+
+}
+.footer-link_to_messege{
+	padding-bottom: 20px;
+}
+.footer-link_to_messege a{
+	font-size: 40px;
+}
+.footer-link_to_messege a:nth-child(1){
+	color:#3b5998;
+}
+.footer-link_to_messege a:nth-child(2){
+	color:#55acee;
+}
+.footer-link_to_messege a:nth-child(3){
+	color:#dd4b39;
+}
+.main-footer-author{
+	color:#fff;
+	font-size: 12px;
+
+}
+
