@@ -1,0 +1,600 @@
+@import url("../css/fonts.css")
+$colorMain: #828282 
+$color1: #7EA4E8
+$color2: #2CC7C1
+$colorTitle: #828689
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	color: $colorMain
+	font-family: 'Ubuntu', sans-serif
+	font-weight:normal
+	font-size: 17px
+	
+.wrapper
+	width: 100%
+	max-width: 1200px
+	margin: 0 auto
+@media only screen and (max-width: 1280px)
+	.wrapper
+		width: 90%
+		margin: 0 auto
+
+// -------BLOCKS
+.title
+	color: $colorTitle
+	font-size: 30px
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600
+	text-transform: uppercase
+.btn
+	display: inline-block
+	background-color:#7EA4E8
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500
+	text-decoration: none
+	color:#fff
+	text-transform: uppercase
+	font-size: 17px
+	margin: 25px 15px 0 15px
+
+	padding:
+		top: 18px
+		left: 26px
+		right: 26px
+		bottom: 18px
+	i
+		font-size: 18px
+.btn-gray
+	@extend .btn
+	background-color: #6A7079
+
+
+
+
+.blocks
+	// flex: 50%
+	width: 40%
+	// padding-right: 100px
+	line-height: 1.4	
+	&__text1
+		font-size: 22px
+		margin-top: 35px
+		margin-bottom: 25px
+	&__text2
+		font-size: 16px
+		font-weight: 300
+	&__download-pdf
+		display: inline-block
+		text-decoration: none
+		text-transform: uppercase
+		color: $color2 
+		margin-top: 20px
+		
+
+
+.arrow-left
+	transform: rotate(-90deg)
+
+
+
+// ------- HEADER
+
+.main-header
+	background-color: #525B64
+	color:#fff
+	height: 100vh
+	width: 100vw
+
+	.main-header-content
+		height: 100vh
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.header__headline
+			font-family: 'candy'
+			font-weight: 400
+			font-size: 130px
+		.header__event 
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700
+			font-size: 31px
+		.header__text 
+			text-align: center
+			font-size: 20px
+			width: 50%
+			margin-top: 35px
+			line-height: 1.5
+		.btn--header
+			margin: 25px 15px 0 15px
+@media only screen and (max-width:  767px)
+	.main-header
+	.main-header-content
+		.btn--header
+			width: 100%
+			padding: 26px 26px 26px 26px 
+			text-align: center
+	
+@media only screen and (max-width: 480px)
+	.main-header
+		.main-header-content
+			.header__headline
+				font-size: 100px
+			.header__event 
+			.header__text 
+				font-size: 18px
+				line-height: 1.4
+				width: 90%
+				margin-top: 45px
+			.btn--header
+				margin-top: 50px
+				margin: 25px 0px 0 0px 
+
+
+			
+// ---------EVENT
+.main-event
+	margin-top: 110px
+	display: flex 
+	justify-content: space-between
+	@media only screen and (max-width: 767px)
+		flex-wrap: wrap
+
+@media only screen and (max-width: 767px)
+	.blocks--main-event
+		.title
+			text-align: center
+		width: 100%
+
+.event-learning
+	// flex: 50%
+	margin-top: 20px
+	width: 47%
+	@media only screen and (max-width: 767px)
+		margin-top: 125px
+		width: 100%
+	&__title
+		font-size: 18px
+		font-weight: 700
+		color: #ABB1BA
+		text-transform: uppercase
+		cursor: pointer
+	&__title:nth-child(1)
+		margin: 0 50px 0 10px
+	&__title:nth-child(2)
+		margin: 0 0 0 50px
+	&__title-active
+		color: #9097A1
+	&__text
+		margin-top: 55px
+	&__list
+		margin-top: 40px
+		display: flex 
+		justify-content: space-between
+		ul>li
+			margin-left: 15px
+			list-style: none
+			margin-top: 15px
+		ul>li::before
+			vertical-align: sub 
+			content: url('../img/check.svg')
+			margin-right: 10px
+.event-learning__img
+	background: url('../img/cloud.png') no-repeat center 
+	width: 50%	
+// Event Speakers
+.event-speakers
+	margin-top: 140px
+	&-headline
+		text-align: center
+		.title--event-speakers
+			color: #6A7079
+			margin-bottom: 20px
+	&__subtitle
+		font-size: 22px
+
+	&-items
+		display: flex
+		margin-top: 65px
+		@media only screen and (max-width: 767px)
+			flex-wrap: wrap 
+			justify-content: center
+	&__item
+		width: 25%
+		text-align: center
+		margin-right: 70px
+		@media only screen and (max-width: 767px)
+			border: 1px solid  red
+
+		.item__img
+			background: #CDD0D2
+			width: 145px
+			height: 145px
+
+			width: 10vw
+			height: 10vw
+			
+			border-radius: 100% 
+			margin: 
+				left: auto 
+				right: auto
+		.item__name
+			margin-top: 30px
+			font-weight: 500
+			font-size: 20px
+			color: #777A7D
+			text-transform: uppercase
+		.item__description
+			margin-top: 22px
+			font-size: 16px
+			line-height: 1.4
+	&-btn
+		margin-top: 80px
+		text-align: center
+		.sup__text
+			font-size: 22px
+			color: #828689
+			width: 50%
+			line-height: 1.5
+			letter-spacing: 1.5px
+			margin: 
+				right: auto
+				left: auto 
+				bottom: 20px
+			@media only screen and (max-width: 767px)
+				width: 80%
+
+// SECTION EVENT INFORMATION 
+.event-information
+	margin-top: 240px
+	margin-bottom: 150px
+.event-information-content
+	
+.event-news
+	display: flex
+	justify-content: space-between
+	@media only screen and (max-width: 767px)
+		flex-wrap: wrap 
+@media only screen and (max-width: 767px)
+	.blocks--event-news
+		width: 100%
+		
+.event-accordion
+	width: 50%
+	border: 1px solid #ECECEC
+	@media only screen and (max-width: 767px)
+		width: 100%
+		margin-top: 125px
+
+	&-date
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 45px
+		span
+			margin-right: 55px
+			cursor: pointer
+		&-active
+			color: #45484D
+
+	&-item
+		margin-bottom: 20px
+		display: flex
+		justify-content: space-between
+		transition: 0.4s
+		cursor: pointer 
+		&__content
+			// margin: 25px 0 25px 0
+			// padding: 10px
+			font-size: 17px
+			line-height: 1.5
+			overflow: hidden 
+			max-height: 0
+			transition: max-height 0.2s ease-out
+			
+			// display: none
+		time
+			color:#fff
+			font-weight: 500
+			background-color: $color2
+			padding: 8px 8px
+			border-radius: 5px
+			display: inline-block
+			margin-right: 25px
+		span
+			color: #747A84
+			font-size: 18px
+			font-weight: 500
+			margin-right: 135px
+		i
+			color: $color2
+			cursor: pointer 
+.event-video
+	margin-top: 125px
+	display: flex 
+	justify-content: space-between
+	@media only screen and (max-width: 767px)
+		flex-wrap: wrap 
+	&__video
+		height: 350px
+		width: 45%
+		background: #E4E4E4
+		display: flex
+		align-items: center 
+		justify-content: center 
+		margin-left: 5px
+		i
+			color: $color2
+			font-size: 50px
+		@media only screen and (max-width: 767px)
+			width: 100%
+			margin-top: 125px
+@media only screen and (max-width: 767px)
+	.blocks--event-video
+		width: 100%
+		margin-top: 125px
+
+.event-gallery
+	display: flex 
+	justify-content: space-between 
+	margin-top: 125px
+	@media only screen and (max-width: 767px)
+		flex-wrap: wrap 
+		
+	&-slider
+		position: relative 
+		height: 350px
+		width: 45%
+		background: #E4E4E4
+		@media only screen and (max-width: 767px)
+			width: 100%
+			margin-top: 125px
+		&-nav
+			position: absolute 
+			bottom: .5vw
+			margin-left: 20px
+			display: flex 
+			&__item
+				width: 18px
+				height: 18px
+				border: 3px solid $color2
+				border-radius: 100%
+				margin-right: 7px
+				cursor: pointer
+			.gallery-slider-active
+				background: $color2
+@media only screen and (max-width: 767px)
+	.blocks--event-gallery
+		width: 100%
+		margin-top: 125px
+
+//  SECTION EVENT REGISTER 
+.registerEvent
+	margin-bottom: 250px
+	&-headline
+		text-align: center 
+		.title--registerEvent
+			color: #6A7079
+			letter-spacing: 2px
+		.registerEvent-headline__text
+			// width: 40%
+			margin-top: 25px
+			font-size: 22px
+			color: #828689
+	&-form
+		margin-top: 110px
+		position: relative
+		display: flex 
+		margin-left: 5%
+		@media only screen and (max-width: 767px)
+			flex-wrap: wrap
+		&__input
+			background-color: transparent
+			font-family: 'Ubuntu', sans-serif;
+			outline: none
+			font-size: 18px
+			color: #6A7079
+			font-weight: 400
+			padding: 
+				top: 5% 
+				bottom: 5%
+				left: 3%
+				right: 0
+			// border: 1px solid #6A7079
+			border: none 
+			border-radius: 2px
+			&:hover
+				border: 1px solid #6A7079
+				transition: .3s
+			&:focus
+				outline: 2px solid #2CC7C1
+				transition: .3s
+			@media only screen and (max-width: 767px)
+				width: 100%
+				margin-top: 10px
+				
+	.form-group
+		position: relative
+		@media only screen and (max-width: 767px)
+			width: 100%
+		.form__label
+			position: absolute 
+			top: .5vw
+			left: .5vw
+			z-index: -1
+			transition: .5s
+			font-weight: 500
+			font-size: 20px
+	&-form
+		&__input
+			&:focus ~ .form__label, &:not(:placeholder-shown) ~ .form__label
+					top: -18px
+					color:#e0e0e0
+					opacity: 0
+					transition: .5s
+
+// Dropdown
+.selectPlan-btn
+  background-color: $color2
+  color: white
+  padding:
+  	right: 100px
+  	left: 18px
+  	top: 18px
+  	bottom: 18px
+  font-size: 18px
+  // font-size: 1vw
+  border: none
+  cursor: pointer
+  @media only screen and (max-width: 767px)
+  	padding: 
+  		right: 18px
+	
+ 
+	
+
+.selectPlan
+  position: relative
+  display: inline-block
+  width: 19%
+  @media only screen and (max-width: 767px)
+  	width: 100%
+  	margin-top: 10px
+  	text-align: center
+
+.selectPlan-content
+  display: none
+  width: 100%
+  position: absolute
+  background-color:#525B64
+  min-width: 160px
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+  z-index: 1
+  span
+    color: $color2
+    padding: 12px 16px
+    text-decoration: none
+    display: block
+    &:hover
+     color:#fff
+     transition: .3s
+     cursor: pointer
+
+.show
+  display: block
+
+.btn--registerEvent
+	margin: 0
+	margin-left: 30px
+	@media only screen and (max-width: 767px)
+  		width: 100%
+  		margin-left: 0
+  		margin-top: 10px
+  		text-align: center
+	
+
+
+//  Sponsore
+.sponsore
+	margin-bottom: 80px
+.sponsore-content
+	display: flex 
+	justify-content: space-between
+	width: 100%
+	
+.sponsore-content img 
+	width: 20%
+	height: auto
+	
+
+// FOOTER
+.main-footer
+	background-color: #525B64
+	color: #CDD0D2
+	.footer-subscribe
+.footer__title
+	display: inline-block
+	color:#fff
+	font-size: 25px
+	margin-bottom: 30px
+.footer__text
+	font-size: 16px
+	line-height: 1.5
+.footer-links
+	text-decoration: none
+	color: $color2 
+	 
+.footer-1
+	display: flex
+	justify-content: space-between
+	padding-top: 100px
+	padding-bottom: 85px
+
+.footer-subscribe
+	width: 40%
+	&__facebook
+		background-color: #415B9F
+		color: #fff
+		padding:
+			left: 10px
+			right: 10px
+			bottom: 5px
+			top: 5px
+		border-radius: 5px 
+		display: inline-block
+		text-decoration: none
+		margin-top: 25px
+		margin-right: 50px
+		
+		
+
+
+
+		i
+			color:#fff
+	&__twitter
+		background-color: #fff
+		color: #231F20
+		padding:
+			left: 10px
+			right: 10px
+			bottom: 5px
+			top: 5px
+		border-radius: 5px 
+		display: inline-block
+		text-decoration: none
+		margin-top: 25px
+		i
+			color: #00ACEE
+
+
+
+.footer-support
+	width: 25% 
+.footer-contact
+	width: 20%
+	p
+		margin-bottom: 18px
+		a
+			font-weight: 500
+			font-size: 18px
+			// font-size: 1vw
+			i
+				margin-right: 12px
+.footer-2
+	background: #3F464C
+	.copyright
+		font-size: 14px
+		color: #CACACA
+		letter-spacing: 1.3px
+		padding: 
+			top: 15px
+			bottom: 15px
+		font: 500px
+		span
+			font-weight: 600
+
