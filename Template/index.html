@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template</title>
+    <!--lato font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <!--VareloRound font-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap&subset=hebrew,latin-ext,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/desctops.css" @media="(min-width: 1025px) and (max-width: 1280px)"/>
+    <link rel="stylesheet" href="css/laptops.css" @media="(min-width: 768px) and (max-width: 1024px)"/>
+    <link rel="stylesheet" href="css/tablets.css" @media="(min-width: 481px) and (max-width: 767px)"/>
+    <link rel="stylesheet" href="css/mobile.css" @media="(min-width: 320px) and (max-width: 480px)"/>
+</head>
+<body>
+<div class="mobile-menu_icon"><span></span></div>
+<ul class="mobile-menu" id="mobile-menu">
+    <li class="mobile-menu__item"><a href="#about">ABOUT</a></li>
+    <li class="mobile-menu__item"><a href="#services">SERVICES</a></li>
+    <li class="mobile-menu__item"><a href="#team">TEAM</a></li>
+    <li class="mobile-menu__item"><a href="#partners">PARTNERS</a></li>
+</ul>
+<!--HEADER-->
+<header class="full-container">
+    <div class="container header-container">
+        <div class="menu">
+            <h1 class="name">ena</h1>
+            <ul class="main-menu" id="menu">
+                <li class="main-menu_item"><a href="#about" class="main-menu_item_link right-point">ABOUT</a></li>
+                <li class="main-menu_item"><a href="#services" class="main-menu_item_link right-point">SERVICES</a></li>
+                <li class="main-menu_item"><a href="#team" class="main-menu_item_link">TEAM</a></li>
+                <li class="main-menu_item"><a href="#partners" class="main-menu_item_link left-point">PARTNERS</a></li>
+            </ul>
+        </div>
+        <img src="img/header/tide.png" alt="tide" class="tide">
+        <div class="header-content">
+            <div class="header-content_text">
+                <h1 class="title" style="color: white">Best Services</h1>
+                <h1 class="title" style="color: white">For Your Businnes</h1>
+                <p class="description">Get TOP 10 Tips on how to perform in
+                    2019 from the best experts in various industries</p>
+                    <button class="main-btn">GET TIPS</button>
+            </div>
+            <img src="img/header/map.png" alt="site map" class="header-content-img">
+        </div>
+    </div>
+</header>
+<!--ABOUT-->
+<section class="about-us container" id="about">
+    <div class="about-us_text">
+        <h1 class="title">We are experts</h1>
+        <div class="about-us_text__main">
+            <div class="about-us_text__item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitaliqua.</p>
+            </div>
+            <div class="about-us_text__item">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+            <div class="about-us_text__item">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            </div>
+            <div class="about-us_text__item">
+                <p>Excepteur sint occaecat cupidatat non proident.</p>
+            </div>
+        </div>
+        <div class="about-us_footer">
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</p>
+            <button class="main-btn">LEARN MORE</button>
+        </div>
+    </div>
+    <div class="about-us_img"><img src="img/about/about-img.png" alt="about-img"></div>
+</section>
+<!--SERVICES-->
+<section class="services container" id="services">
+  <h1 class="title">Services</h1>
+  <div class="services-content">
+    <canvas id="canvas"></canvas>
+    <div class="services-content_item">
+      <img src="img/services/1.png" alt="services-item" class="services_item__img">
+      <h2>the best</h2>
+      <p>Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.</p>
+    </div>
+    <div class="services-content_item">
+      <img src="img/services/2.png" alt="services-item" class="services_item__img">
+      <h2>Services</h2>
+      <p>Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="services-content_item">
+      <img src="img/services/3.png" alt="services-item" class="services_item__img">
+      <h2>For</h2>
+      <p>Duis aute irure dolor in reprehenderit 
+          in voluptate velit esse cillum dolore.</p>
+    </div>
+    <div class="services-content_item">
+      <img src="img/services/4.png" alt="services-item" class="services_item__img">
+      <h2>Your</h2>
+      <p>Lorem ipsum dolor 
+        sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="services-content_item">
+      <img src="img/services/5.png" alt="services-item" class="services_item__img">
+      <h2>Business</h2>
+      <p>Nemo enim ipsam voluptatem voluptas sit 
+          aspernatur aut odit aut sed fugit.</p>
+    </div>
+  </div>
+</section>
+<!--YOUR PLAN-->
+<section class="plan container">
+    <div class="plan-text">
+        <div class="plan-content_wrapper">
+            <h1 class="title">Choose Your Perfect Plan</h1>
+            <div class="plan-text_btns">
+                <button class="text-btns_item active-text_btn"  onclick="showTab(event, 'basic', 'standart')">Basic</button>
+                <button class="text-btns_item"  onclick="showTab(event, 'standart', 'premium')">Standart</button>
+                <button class="text-btns_item" onclick="showTab(event, 'premium', 'extra')">Premium</button>
+                <button class="text-btns_item" onclick="showTab(event, 'extra', 'basic')">Extra</button>
+            </div>
+        </div>
+        <div class="plan-text_wrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <p>Have a question? <a href="#">Let‘s talk</a></p>
+        </div>
+    </div>
+    <div class="plan-cards">
+        <div class="plan-card_item__wrapper relative-card" id="basic">
+            <div class="plan-cards_item">
+                <h2>BASIC</h2>
+                <p>Basic package for
+                    small business</p>
+                <ul class="plan-cards_item__list">
+                    <li class="cards-list_item">Excepteur sint occaecat </li>
+                    <li class="cards-list_item">Duis aute irure dolor</li>
+                    <li class="cards-list_item">Sunt in culpa qui officia deserunt mollit anim id </li>
+                    <li class="cards-list_item">Ut enim ad minim veniam</li>
+                </ul>
+                <button class="main-btn">GET FOR FREE</button>
+            </div>
+        </div>
+        <div class="plan-card_item__wrapper absolute-card" id="standart">
+            <div class="plan-cards_item">
+                <h2>STANDART</h2>
+                <p>Standart package for
+                    your business</p>
+                <ul class="plan-cards_item__list">
+                    <li class="cards-list_item">Excepteur sint occaecat </li>
+                    <li class="cards-list_item">Duis aute irure dolor</li>
+                    <li class="cards-list_item">Sunt in culpa qui officia deserunt mollit anim id </li>
+                    <li class="cards-list_item">Ut enim ad minim veniam</li>
+                </ul>
+                <button class="main-btn">GET FOR 10$</button>
+            </div>
+        </div>
+        <div class="plan-card_item__wrapper hide" id="premium">
+            <div class="plan-cards_item">
+                <h2>PREMIUM</h2>
+                <p>Premium package for
+                    your business</p>
+                <ul class="plan-cards_item__list">
+                    <li class="cards-list_item">Excepteur sint occaecat </li>
+                    <li class="cards-list_item">Duis aute irure dolor</li>
+                    <li class="cards-list_item">Sunt in culpa qui officia deserunt mollit anim id </li>
+                    <li class="cards-list_item">Ut enim ad minim veniam</li>
+                </ul>
+                <button class="main-btn">GET FOR 100$</button>
+            </div>
+        </div>
+        <div class="plan-card_item__wrapper hide" id="extra">
+            <div class="plan-cards_item">
+                <h2>EXTRA</h2>
+                <p>Extra package for
+                    your business</p>
+                <ul class="plan-cards_item__list">
+                    <li class="cards-list_item">Excepteur sint occaecat </li>
+                    <li class="cards-list_item">Duis aute irure dolor</li>
+                    <li class="cards-list_item">Sunt in culpa qui officia deserunt mollit anim id </li>
+                    <li class="cards-list_item">Ut enim ad minim veniam</li>
+                </ul>
+                <button class="main-btn">GET FOR 500$</button>
+            </div>
+        </div>
+    </div>
+    <div class="plan-text_wrapper__mobile">
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+       <p>Have a question? <a href="#">Let‘s talk</a></p>
+   </div>
+</section>
+<!--YOUR OWN SET-->
+<section class="set container">
+    <h1 class="title">Create Your Set</h1>
+    <div class="set-editor_wrapper">
+        <div class="set-editor">
+            <div class="set-editor_discount">
+                <h4>Choose an item now and get discount</h4>
+                <h1>5% OFF</h1>
+                <button class="set-editor_discount__btn main-btn">GET MY SET</button>
+            </div>
+            <div class="set-editor_main">
+                <div class="set-editor_text">
+                    <p>TRY NOW</p>
+                    <p>OUR EDITOR</p>
+                </div>
+                <div class="set-editor_btn">
+                    <div class="set-editor_circle"></div>
+                </div>
+                <ul class="set-editor_list">
+                    <li class="set-editor_list__item">MY LISTS</li>
+                    <li class="set-editor_list__item">STATISTICS</li>
+                    <li class="set-editor_list__item">SETTINGS</li>
+                    <li class="set-editor_list__item">EXTRA SERVICE</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="mobile-discount">
+    <div class="mobile-discount_btn"></div>
+    <div class="set-editor_discount">
+        <h4>Choose an item now and get discount</h4>
+        <h1>5% OFF</h1>
+        <button class="set-editor_discount__btn main-btn">GET MY SET</button>
+    </div>
+</div>
+<!--TEAM-->
+<section class="team container" id="team">
+  <div class="team-text">
+    <h1 class="title">Team</h1>
+    <p class="main-description">Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. </p>
+  </div>
+  <div class="team-content">
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+    <div class="team-content_item"></div>
+  </div>
+  <div class="team-footer">
+    <p>Excepteur sint occaecat cupidatat non proident.</p>
+    <button class="main-btn">GET TIPS</button>
+  </div>
+</section>
+<!--PARTNERS-->
+<section class="partners full-container" id="partners">
+  <div class="partners-content container">
+    <div class="partners-text">
+      <h1 class="title">Partners</h1>
+      <p>Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="partners-images">
+      <div class="partners-images_item"><img src="img/partners/items/1.png" alt="company"></div>
+      <div class="partners-images_item"><img src="img/partners/items/2.png" alt="company"></div>
+      <div class="partners-images_item"><img src="img/partners/items/3.png" alt="company"></div>
+      <div class="partners-images_item"><img src="img/partners/items/4.png" alt="company"></div>
+      <div class="partners-images_item"><img src="img/partners/items/5.png" alt="company"></div>
+      <div class="partners-images_item"><img src="img/partners/items/6.png" alt="company"></div>
+      <div class="partners-images_item"><img src="img/partners/items/7.png" alt="company"></div>
+    </div>
+    <p class="partners-footer_text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+  </div>
+</section>
+<!--LOCATION-->
+<section class="location container">
+  <div class="location-text">
+    <h1 class="title">We Are Here</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut commodo consequat. </p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+  </div>
+</section>
+<!--SPAM-->
+<section class="container spam">
+  <h1 class="spam-title">Subscribe and Learn More</h1>
+  <div class="spam-form-wrapper">
+    <form action="" class="spam-form">
+      <input type="text" placeholder="Your Email" class="spam-form-text">
+      <input type="submit" class="spam-form-submit main-btn" value="SUBSCRIBE">
+    </form>
+  </div>
+  <p>We promise to never spam you</p>
+</section>
+<!--FOOTER-->
+<footer class="container">
+  <hr>
+  <div class="menu">
+      <h1 class="name">ena</h1>
+      <ul class="main-menu" id="bottom-menu">
+          <li class="main-menu_item"><a href="#about" class="main-menu_item_link right-point">ABOUT</a></li>
+          <li class="main-menu_item"><a href="#services" class="main-menu_item_link right-point">SERVICES</a></li>
+          <li class="main-menu_item"><a href="#team" class="main-menu_item_link">TEAM</a></li>
+          <li class="main-menu_item"><a href="#partners" class="main-menu_item_link left-point">PARTNERS</a></li>
+      </ul>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</p>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/index.js"></script>
+</html>

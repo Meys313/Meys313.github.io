@@ -1,0 +1,1146 @@
+//containers for confortable work
+//LATO font font-family: 'Lato', sans-serif;
+//VARELOROUND font font-family: 'Varela Round', sans-serif;
+
+*
+    margin: 0
+    padding: 0
+    font-family: 'Lato', sans-serif
+    box-sizing: border-box
+    outline: none
+@font-face
+    font-family: "bauhaus"
+    src: url(../fonts/bauhs93.ttf)
+
+.full-container
+    width: 100%
+    padding: 50px 15px
+.container
+    max-width: 1200px
+    margin: 0 auto
+.title
+    font-size: 60px
+    font-weight: 800
+    color: #626468
+.main-btn
+    padding: 17px 60px
+    font-size: 20px
+    border-radius: 40px
+    border: 0
+    background: linear-gradient(#f5c364, #f5944e)
+    color: #583820
+    font-weight: 800
+    cursor: pointer
+    display: block
+    -webkit-box-shadow: 0px 0px 22px 0 rgba(255,172,54,1)
+    -moz-box-shadow: 0px 0px 22px 0 rgba(255,172,54,1)
+    box-shadow: 0px 0px 22px 0 rgba(255,172,54,1)
+.main-btn:active
+    background: linear-gradient(#f5944e, #f5c364)
+.hide
+    opacity: 0
+    visibility: hidden
+    display: none
+.active-block
+  display: block !important
+  opacity: 1 !important
+ul
+    list-style-type: none
+a
+    text-decoration: none
+p
+    font-size: 20px
+    color: #929497
+canvas
+  position: absolute
+  z-index: 999
+//MOBILE MENU
+.mobile-btn_active
+  span
+    height: 0 !important
+    &::before
+      transform: rotate(45deg) translateY(1px) !important
+    &::after
+      transform: rotate(-45deg) translateY(-1px) !important
+.mobile-menu_active
+  transform: translateY(0%) !important
+.mobile-menu
+  transition: 0.2s
+  z-index: 99
+  position: fixed
+  top: 0
+  width: 100%
+  background: #fff
+  transform: translateY(-100%)
+.mobile-menu__item
+  text-align: center
+  padding: 10px 20px
+  a
+    color: #000
+.mobile-menu_icon
+  display: none
+  width: 40px
+  height: 40px
+  position: fixed
+  z-index: 999
+  top: 0
+  right: 0
+  span
+    position: absolute
+    top:50% 
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: block
+    width: 20px
+    height: 2px
+    background: #000
+    &::before, &::after
+      content: ''
+      display: block
+      width: 20px
+      height: 2px
+      background: #000
+    &::before
+      transform: translateY(-5px)
+    &::after
+      transform: translateY(3px)
+//HEADER
+header
+    background: url(../img/header/bg.jpg) center top/cover no-repeat
+    color: #fff
+    padding: 30px 15px 150px 15px
+    clip-path: ellipse(130% 85% at 50% 15%)
+.menu
+    display: flex
+    justify-content: space-between
+.name
+    font-family: "bauhaus"
+    font-weight: 100
+    margin-bottom: 5px
+    &::after
+        content: url(../img/header/circle.png)
+        margin-left: 10px
+.main-menu
+    display: flex
+    justify-content: flex-end
+    align-items: center
+.main-menu_item_link
+    color: #fff
+    margin-right: 20px
+.right-point::after
+    content: '•'
+    font-size: 13px
+    margin-left: 20px
+.left-point::before
+    content: '•'
+    font-size: 13px
+    margin-right: 20px
+.tide
+    display: block
+    margin: 200px auto 0 auto
+.header-content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+.header-content_text
+  max-width: 550px
+.header-content-img
+  max-width: 500px
+.description
+    width: 70%
+    margin: 20px 0
+    color: #fff
+//ABOUT US
+.about-us
+    padding: 100px 15px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    p
+        color: #929497
+.about-us_text
+    width: 650px
+    h1
+        margin-bottom: 40px
+.about-us_img
+    width: 450px
+    img
+        width: 100%
+.about-us_text__main
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+.about-us_text__item
+    width: 50%
+    margin-top: 20px
+    p
+        width: 70%
+        float: left
+    &::before
+        content: ''
+        display: block
+        width: 10px
+        height: 50px
+        border-radius: 20px
+        background: linear-gradient(#267da8, #1f527c)
+        margin-right: 15px
+        float: left
+.about-us_footer
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+    p
+        width: 40%
+    .main-btn
+        margin-right: 100px
+//SERVICES
+.services
+  padding: 50px 15px 70px 15px
+  .title
+    margin: 0 0 40px 0
+    float: right
+.services-content
+  float: none
+  clear: both
+  position: relative
+  display: flex
+  justify-content: space-evenly
+  flex-wrap: wrap
+  align-items: center
+.services-content_item
+  width: 200px
+  h2
+    color: #4a5d70
+    margin: 10px 0
+  *
+    text-align: center
+  &:nth-child(2n+1)
+    margin-top: 150px
+  &:nth-child(2n+0)
+    margin-bottom:150px
+  img
+    display: block
+    max-width: 110px
+    margin: 0 auto
+//PLANS
+.plan
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 50px 15px
+.plan-text
+    width: 600px
+    .title
+        width: 60%
+        margin: 0 0 20px 0
+    p
+        width: 60%
+        margin: 15px 0
+        a
+            color: #22719b
+            text-decoration: underline
+.plan-text_btns
+    width: 90%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    border-radius: 30px
+    border: 1px solid #d9dadc
+    padding: 5px
+    margin: 50px 0
+
+.text-btns_item
+    border-radius: 30px
+    border: 0
+    width: 24%
+    height: 45px
+    -webkit-box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    -moz-box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    cursor: pointer
+    background: none
+    font-family: 'Varela Round', sans-serif
+    color: #a4a6a8
+    font-size: 17px
+    transition: 0.2s
+.active-text_btn
+    background: linear-gradient(#4cb0c6, #1b6594)
+    color: #fff
+    text-transform: uppercase
+.plan-cards
+    width: 400px
+    position: relative
+.plan-card_item__wrapper
+    width: 300px
+    padding: 5px
+    background: #fff
+    -webkit-box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    -moz-box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    border-radius: 5px
+    transition: 0.5s
+.plan-cards_item
+    padding: 30px
+    border: 3px solid #bad5e1
+    border-radius: 5px
+    background: #fff
+    transition: 0.2s
+    h2
+        text-transform: uppercase
+        color: #486072
+        margin: 20px 0
+    p
+        margin: 20px 0
+    *
+        text-align: center
+    .main-btn
+        font-size: 15px
+        padding: 15px 30px
+        margin: 30px auto 0 auto
+.cards-list_item
+    margin: 20px 0
+    text-align:  left
+    &::before
+        content: url(../img/plans/line.png)
+        margin-right: 20px
+.relative-card
+    position: relative
+    left: 0
+    z-index: 3
+
+.absolute-card
+    position: absolute
+    top: 0
+    left: 80px
+    z-index: 2
+    opacity: .4
+//CREATE YOUR SET
+.plan-text_wrapper__mobile, .mobile-discount
+  display: none
+.set
+    padding: 50px 15px
+    .title
+        margin: 30px 0
+        text-align: right
+.set-editor_wrapper
+    padding: 5px
+    -webkit-box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    -moz-box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+    border-radius: 5px
+    width: 80%
+    float: right
+    clear: both
+.set-editor
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 2px solid #e3e7f0
+    border-radius: 5px
+    position: relative
+    height: 500px
+.set-editor_main
+    display: flex
+    position: relative
+.set-editor_btn
+    width: 120px
+    height: 120px
+    border: 2px solid #d5d9de
+    border-radius: 10px
+    margin-left: 30px
+    position: relative
+    cursor: pointer
+.set-editor_circle
+    width: 60px
+    height: 60px
+    border: 3px solid #c8cbd1
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 50%
+    &::before, &::after
+        content: ''
+        display: block
+        width: 35px
+        height: 5px
+        background: #c8cbd1
+        border-radius: 10px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &::before
+        transform: translate(-50%, -50%) rotate(90deg)
+.set-editor_text
+    p
+        color: #d7dae0
+        font-size: 50px
+        font-weight: 300
+.set-editor_discount
+    position: absolute
+    left: -200px
+    top: 30px
+    background: url(../img/set/bg.jpg) center top/cover no-repeat
+    border-radius: 7px
+    width: 350px
+    overflow: hidden
+    h4
+        text-align: center
+        color: white
+        font-size: 25px
+        width: 70%
+        margin: 50px auto
+    h1
+        text-align: center
+        text-transform: uppercase
+        font-size: 50px
+        background: linear-gradient(#f5c364, #f5944e)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin: 80px 0
+.set-editor_discount__btn
+    background: url(../img/set/btn-bg.png)
+    border: 2px solid #f5c364
+    color: white
+    margin: 50px auto
+    &:active
+        background: url(../img/set/btn-bg.png)
+.set-editor_list
+  opacity: 0
+  display: none
+  position: absolute
+  background: #fff
+  -webkit-box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+  -moz-box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+  box-shadow: 0px 0px 54px 5px rgba(61,61,62,0.2)
+  top: 140px
+  left: 360px
+  border-radius: 5px
+  transition: 0.5s
+  &::before
+    content: ''
+    display: block
+    width: 20px
+    height: 20px
+    transform: rotate(45deg)
+    background: #fff
+    position: absolute
+    top: -10px
+    left: 20px
+.set-editor_list__item
+  white-space: nowrap
+  width: 100%
+  padding: 15px 10vw 15px 15px
+  color: #000
+  cursor: pointer
+  position: relative
+  transition: 0.2s
+  &::after
+    content: '•'
+    color: #dbd5d4
+    font-size: 30px
+    position: absolute
+    top: 5px
+    right: 10px
+  &:hover
+    background: linear-gradient(#f5c364, #f5944e)
+    color: #543017
+    &::after
+      color: #86603f
+  .mobile-discount_hide
+    transform: rotateX(100deg)
+//TEAM
+.team
+  padding: 50px 15px
+  float: none
+  clear: both
+  .main-description
+    width: 70%
+    margin: 30px 0
+.team-content
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+.team-content_item
+  width: 230px
+  height: 230px
+  &:nth-child(2n+0)
+    background: #e4e4e4
+  &:nth-child(2n+1)
+    background: #efefef
+.team-footer
+  display: flex
+  justify-content: space-evenly
+  align-items: center
+  margin: 50px 0 0 0
+//OUR PARTNERS
+.partners
+  background: url(../img/partners/bg.jpg) center top/cover no-repeat
+.partners-text
+  white-space: normal
+  text-align: right
+  .title
+    color: #fff
+    margin: 0 0 20px 0 
+  p
+    color: #fff
+    width: 40%
+    float: right
+    margin-bottom: 30px
+.partners-images
+  float: none
+  clear: both
+  display: flex
+  justify-content: space-evenly
+  flex-wrap: wrap
+  margin-top: 30px
+.partners-images_item
+  width: 300px
+  margin: 30px 0 0 0
+  img
+    display: block
+    margin: 0 auto
+.partners-footer_text
+  margin: 100px auto 0 auto
+  text-align: center
+  width: 60%
+  color: #fff
+//LOCATION
+.location
+  background: url(../img/location/bg.png) center top/cover no-repeat
+  padding: 130px 15px
+.location-text
+  width: 450px
+  *
+    margin: 20px 0
+//spam
+.spam
+  p
+    float: none
+    clear: both
+    text-align: center
+    margin: 50px 0 70px 0
+    color: #616e80
+.spam-title
+  text-align: center
+  margin: 50px 0
+  font-family: 'Varela Round', sans-serif
+  font-size: 50px
+  color: #345365
+.spam-form
+  overflow: hidden
+  font-size: 20px
+  font-family: 'Varela Round', sans-serif
+.spam-form-wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+.spam-form-text
+  float: left
+  width: 600px
+  height: 60px
+  font-size: 20px
+  border-radius: 40px
+  border: 1px solid #d4d4d5
+.spam-form-submit
+  -webkit-box-shadow: 0px 0px 0 0 rgba(255,172,54,1)
+  -moz-box-shadow: 0px 0px 0 0 rgba(255,172,54,1)
+  box-shadow: 0px 0 0 0 rgba(255,172,54,1)
+  padding: 0
+  margin: 0 0 0 -50px
+  float: left
+  width: 180px
+  height: 60px
+//footer
+footer
+  padding: 50px 15px
+  .menu
+    margin: 30px 0
+  .main-menu_item_link
+    color: #000
+  .name::after
+      content: url(../img/footer/name-footer.png)
+      margin-left: 10px
+      margin-bottom: 5px
+  p
+    width: 40%
+    margin: 40px 0 50px 0
+//MEDIA REQUIRES
+@media (min-width: 1025px) and (max-width: 1280px) 
+  //HEADER  
+  .header-content
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .main-btn
+      margin: 0 auto
+  .header-content_text
+    text-align: center
+  .description
+    margin: 20px auto
+    width: 70%
+  .header-content-img
+    margin-top: 50px
+  //ABOUT US
+  .about-us
+    justify-content: center
+  .about-us_text
+    .title
+      text-align: center
+  .about-us_footer
+
+    p
+      margin: 0 0 30px 0
+      text-align: center
+    .main-btn
+      margin: 0 auto
+  //SERVICES
+  .services-content
+    justify-content: center
+  .services-content_item
+    margin: 0 !important
+    width: 300px
+    p
+      width: 70%
+      margin: 0 auto
+  //PLAN
+  .plan
+    justify-content: center
+    align-items: center
+  .plan-text
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+  .plan-content_wrapper
+    width: 60%
+  .plan-text_wrapper
+    width: 40%
+    p
+      width: 100%
+  //FOOTER
+  footer
+    .menu
+      margin: 20px 0
+    p
+      width: 65%
+      margin: 20px 0
+@media (min-width: 768px) and (max-width: 1024px) 
+  //MENU
+  .mobile-menu_icon
+    display: block !important
+  .main-menu
+    display: none
+  .header-content
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .main-btn
+      margin: 0 auto
+  .header-content_text
+    text-align: center
+  .description
+    margin: 20px auto
+    width: 70%
+  .header-content-img
+    margin-top: 50px
+  //ABOUT US
+  .about-us
+    justify-content: center
+  .about-us_text
+    .title
+      text-align: center
+  .about-us_footer
+
+    p
+      margin: 0 0 30px 0
+      text-align: center
+    .main-btn
+      margin: 0 auto
+  //SERVICES
+  .services-content
+    justify-content: center
+  .services-content_item
+    margin: 0 !important
+    width: 300px
+    p
+      width: 70%
+      margin: 0 auto
+  //PLAN
+  .plan
+    justify-content: center
+    align-items: center
+  .plan-text
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+  .plan-content_wrapper
+    .title
+      text-align: center
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  .plan-text_wrapper
+    display: none
+    p
+      width: 100%
+  //SET 
+  .plan-cards
+    margin-bottom: 20px
+  .plan-text_wrapper__mobile
+    display: block
+    margin: 0 auto
+    p
+      width: 60%
+      text-align: center
+      margin: 10px auto
+  //YOUR OWN SET
+  .set-editor
+    .set-editor_discount
+      display: none
+  .set-editor_wrapper
+    width: 100%
+  .mobile-discount_active
+    transform: translate(0) !important
+  .mobile-discount
+    transition: 0.2s
+    display: block
+    transform: translate(100%)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 99
+  .mobile-discount_btn
+    position: absolute
+    top: 0
+    left: 0
+    width: 40px
+    height: 40px
+    z-index: 999
+    &::before, &::after
+      content: ''
+      display: block
+      width: 20px
+      height: 2px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background: #fff
+    &::before
+      transform: rotate(45deg)
+      transform-origin: center
+    &::after
+      transform: rotate(-45deg)
+  .set-editor_discount
+    z-index: 999
+    display: block 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  //PARTNERS
+  .partners-text p
+    width: 70%
+  //FOOTER
+  footer
+    .menu
+      margin: 20px 0
+    p
+      width: 65%
+      margin: 20px 0
+@media (min-width: 481px) and (max-width: 767px) 
+  h1
+    font-size: 50px !important
+  p
+    font-size: 17px !important
+  //HEADER
+  .tide
+    margin-top: 100px !important
+  header
+    padding: 10px 15px !important
+  .header-content-img
+    max-width: 400px
+  //MENU
+  .mobile-menu_icon
+    display: block !important
+  .main-menu
+    display: none
+  .header-content
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .main-btn
+      margin: 0 auto
+  .header-content_text
+    text-align: center
+  .description
+    margin: 20px auto
+    width: 70%
+  .header-content-img
+    margin-top: 50px
+  //ABOUT US
+  .about-us
+    justify-content: center
+    padding: 40px 15px
+  .about-us_text
+    .title
+      text-align: center
+  .about-us_footer
+    display: block
+    p
+      width: 70%
+      margin: 0 auto 30px auto
+      text-align: center
+    .main-btn
+      margin: 0 auto
+  //SERVICES
+  .services-content
+    justify-content: center
+  .services-content_item
+    margin: 0 !important
+    width: 300px
+    p
+      width: 60%
+      margin: 0 auto
+  //PLAN
+  .plan
+    justify-content: center
+    align-items: center
+  .plan-text
+    .title
+      width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+  .plan-text_btns
+    width: 100%
+  .plan-content_wrapper
+    .title
+      text-align: center
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  .plan-text_wrapper
+    display: none
+    p
+      width: 100%
+  //SET 
+  .plan-cards
+    margin-bottom: 20px
+  .plan-text_wrapper__mobile
+    display: block
+    margin: 0 auto
+    p
+      width: 60%
+      text-align: center
+      margin: 10px auto
+  //YOUR OWN SET
+  .set-editor_list
+    display: none !important
+  .set-editor
+    .set-editor_discount
+      display: none
+  .set-editor_main
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  .set-editor_text
+    p
+      font-size: 40px !important
+      text-align: center
+  .set-editor_btn
+    margin: 0
+  .set-editor_wrapper
+    width: 100%
+  .mobile-discount_active
+    transform: translate(0) !important
+  .mobile-discount
+    transition: 0.2s
+    display: block
+    transform: translate(100%)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 99
+  .mobile-discount_btn
+    position: absolute
+    top: 0
+    left: 0
+    width: 40px
+    height: 40px
+    z-index: 999
+    &::before, &::after
+      content: ''
+      display: block
+      width: 20px
+      height: 2px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background: #fff
+    &::before
+      transform: rotate(45deg)
+      transform-origin: center
+    &::after
+      transform: rotate(-45deg)
+  .set-editor_discount
+    z-index: 999
+    display: block 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  //TEAM
+  .team-content_item
+    width: 200px
+    height: 200px
+  .team-footer
+    flex-direction: column
+    *
+      margin: 10px 0
+  //PARTNERS
+  .partners-text p
+    width: 70%
+  //LOCATION
+  .location-text
+    p
+      width: 90%
+  //SPAM
+  .spam-form
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    input[type='text']
+      width: 90%
+    input[type='submit']
+      margin: 20px 0 0 0
+    *
+      float: none 
+  //FOOTER
+  footer
+    .menu
+      margin: 20px 0
+    p
+      width: 80%
+      margin: 0
+@media (min-width: 320px) and (max-width: 480px) 
+  h1
+    font-size: 35px !important
+  p
+    font-size: 17px !important
+  //HEADER
+  .tide
+    margin-top: 100px !important
+  header
+    padding: 10px 15px !important
+  .header-content-img
+    max-width: 300px
+  //MENU
+  .mobile-menu_icon
+    display: block !important
+  .main-menu
+    display: none
+  .header-content
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .main-btn
+      margin: 0 auto
+  .header-content_text
+    text-align: center
+  .description
+    margin: 20px auto
+    width: 70%
+  .header-content-img
+    margin-top: 50px
+  //ABOUT US
+  .about-us
+    justify-content: center
+    padding: 40px 15px
+  .about-us_text
+    .title
+      text-align: center
+  .about-us_text__item
+    width: 100%
+    margin: 5px
+  .about-us_footer
+    display: block
+    p
+      width: 70%
+      margin: 0 auto 30px auto
+      text-align: center
+    .main-btn
+      margin: 0 auto
+  //SERVICES
+  .services-content
+    justify-content: center
+  .services-content_item
+    margin: 0 !important
+    width: 300px
+    p
+      width: 60%
+      margin: 0 auto
+  //PLAN
+  .plan
+    justify-content: center
+    align-items: center
+  .plan-text
+    .title
+      width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+  .plan-card_item__wrapper 
+    width: 100%
+  .plan-text_btns
+    width: 100%
+  .absolute-card
+    top: 0
+    left: 0
+  .text-btns_item
+    width: 100%
+    margin: 5px
+  .plan-content_wrapper
+    .title
+      text-align: center
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  .plan-text_wrapper
+    display: none
+    p
+      width: 100%
+  //SET 
+  .plan-cards
+    margin-bottom: 20px
+  .plan-text_wrapper__mobile
+    display: block
+    margin: 0 auto
+    p
+      width: 100%
+      text-align: center
+      margin: 10px auto
+  //YOUR OWN SET
+  .set-editor_list
+    display: none !important
+  .set-editor
+    height: 400px
+    .set-editor_discount
+      display: none
+  .set-editor_main
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  .set-editor_text
+    p
+      font-size: 40px !important
+      text-align: center
+  .set-editor_btn
+    margin: 0
+  .set-editor_wrapper
+    width: 100%
+  .mobile-discount_active
+    transform: translate(0) !important
+  .mobile-discount
+    transition: 0.2s
+    display: block
+    transform: translate(100%)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 99
+  .mobile-discount_btn
+    position: absolute
+    top: 0
+    left: 0
+    width: 40px
+    height: 40px
+    z-index: 999
+    &::before, &::after
+      content: ''
+      display: block
+      width: 20px
+      height: 2px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background: #fff
+    &::before
+      transform: rotate(45deg)
+      transform-origin: center
+    &::after
+      transform: rotate(-45deg)
+  .set-editor_discount
+    z-index: 999
+    display: block 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  //TEAM
+  .team-content_item
+    width: 200px
+    height: 200px
+  .team-text
+    .main-description
+      width: 100%
+  .team-footer
+    flex-direction: column
+    *
+      margin: 10px 0
+  //PARTNERS
+  .partners-text p
+    width: 100%
+  .partners-footer_text
+    width: 100%
+  //LOCATION
+  .location-text
+    width: 100%
+    p
+      width: 100%
+  //SPAM
+  .spam-form
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    input[type='text']
+      width: 90%
+    input[type='submit']
+      margin: 20px 0 0 0
+    *
+      float: none 
+  //FOOTER
+  footer
+    .menu
+      margin: 20px 0
+    p
+      width: 100%
+      margin: 0
+  

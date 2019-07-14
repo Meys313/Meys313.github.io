@@ -365,6 +365,9 @@ body {
       .event-gallery-slider-nav .gallery-slider-active {
         background: #2CC7C1; }
 
+.event-gallery-slider__img {
+  color: red; }
+
 @media only screen and (max-width: 767px) {
   .blocks--event-gallery {
     width: 100%;

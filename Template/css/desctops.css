@@ -1,0 +1,84 @@
+/*DESCTOPS*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .header-content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-content .main-btn {
+      margin: 0 auto;
+    }
+  
+    .header-content_text {
+      text-align: center;
+    }
+  
+    .description {
+      margin: 20px auto;
+      width: 70%;
+    }
+  
+    .header-content-img {
+      margin-top: 50px;
+    }
+  
+    .about-us {
+      justify-content: center;
+    }
+  
+    .about-us_text .title {
+      text-align: center;
+    }
+  
+    .about-us_footer p {
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+    .about-us_footer .main-btn {
+      margin: 0 auto;
+    }
+  
+    .services-content {
+      justify-content: center;
+    }
+  
+    .services-content_item {
+      margin: 0 !important;
+      width: 300px;
+    }
+    .services-content_item p {
+      width: 70%;
+      margin: 0 auto;
+    }
+  
+    .plan {
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .plan-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .plan-content_wrapper {
+      width: 60%;
+    }
+  
+    .plan-text_wrapper {
+      width: 40%;
+    }
+    .plan-text_wrapper p {
+      width: 100%;
+    }
+  
+    footer .menu {
+      margin: 20px 0;
+    }
+    footer p {
+      width: 65%;
+      margin: 20px 0;
+    }
+  }
