@@ -1,0 +1,1 @@
+var btn=$("#up-btn-js");$(window).scroll(function(){$(window).scrollTop()>300?btn.addClass("show"):btn.removeClass("show")}),btn.on("click",function(n){n.preventDefault(),$("html, body").animate({scrollTop:0},"300")});
