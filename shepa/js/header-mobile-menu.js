@@ -1,0 +1,6 @@
+$(document).ready(function() {
+    $(".menu-toggle").click(function() {
+        $(".mobile-menu").toggleClass("menu-toggle_active");
+        $("html, body").toggleClass("scroll-hidden");
+    });
+});
